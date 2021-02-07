@@ -1,0 +1,51 @@
+.page {
+    display: flex;
+    flex-direction: column-reverse;
+
+    @media screen and (min-width: $lg) {
+        flex-direction: row;
+        margin: 0 auto;
+        flex: 0 0 50%;
+        max-width: 144rem;
+    }   
+
+    .col {
+        display: block;
+
+        .page-content {
+            padding: 4.3rem;
+        }
+        
+    
+        @media screen and (min-width: $lg) {            
+            flex: 0 0 50%;
+            max-width: 720px;
+
+            .page-content {
+                padding: 12.2rem;
+            }
+
+            &.page-image {
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+        &.page-image {
+            margin: 0;
+            padding: 0;
+        }
+
+        
+        
+    }
+}
+
+.page-image {
+    img {
+        width: 100%;
+    }
+}
+
+
+

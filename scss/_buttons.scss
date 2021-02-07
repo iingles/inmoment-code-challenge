@@ -1,0 +1,35 @@
+.btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;    
+    text-decoration: none;
+    padding: 0.7rem 1.2rem;
+    border-radius: 100px;
+    font-family: $font1;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 18.6px;
+    cursor: pointer;
+    
+    &:hover {
+        &::before {
+            display: flex;
+            align-items: center;
+            margin-right: 0.5rem;
+            content: url("../img/svg/button-arrow.svg");
+            height: 1.1rem;
+            width: 1.1rem;  
+        }
+    }
+
+    &.betta {
+        background: $betta;        
+        color: $albatross;
+    }
+
+    &.learn-more {
+        max-width: 10.4rem;
+    }
+}

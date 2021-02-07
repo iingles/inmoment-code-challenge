@@ -1,0 +1,59 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font1;
+}
+
+h3 {
+    margin-bottom: 2rem;
+    font-family: $font1;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 146.28%;
+    color: $orca;
+}
+
+h4 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: $orca;
+}
+
+h5 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: $betta;
+    margin-bottom: 1rem;
+}
+
+h6 {
+    font-family: $font1;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 146.28%;
+
+    &.betta {
+        color: $betta;
+    }
+}
+
+body {    
+
+    p {
+        margin: 1rem 0 2rem;
+        font-family: $font1;
+        font-size: 1.7rem;
+        font-style: normal;
+        font-weight: normal;        
+        line-height: 165%;
+        color: $orca;
+
+        &.main-copy {
+            margin-bottom: 5rem;
+        }
+    }
+}
+

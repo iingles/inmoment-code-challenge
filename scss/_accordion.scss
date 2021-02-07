@@ -1,0 +1,41 @@
+.accordion {
+    .acc-item {
+        border-top: 1px solid $barracuda;
+
+
+        .acc-header {
+            display: flex;
+            justify-content: space-between;
+            padding: 2.4rem 0;
+            cursor: pointer;
+
+            .arrow {
+                height: 1.3rem;
+                width: 1.1rem;
+                background: url("../img/svg/down-arrow.svg");
+            } 
+        }
+
+        &.open {
+            .acc-header {
+                .arrow {
+                    background: url("../img/svg/up-arrow.svg")!important;
+                 }
+            }
+
+            .acc-content {
+                height:auto;
+                margin-bottom: 3rem;
+                transition: transform 0.3s ease-out; // note that we're transitioning transform, not height!
+                transform: scaleY(1); // implicit, but good to specify explicitly
+                transform-origin:top; // keep the top of the element in the same place. this is optional.
+            }
+        }
+
+        .acc-content {
+            height: 0;
+            overflow: hidden;
+            transform:scaleY(0);
+        }
+    }
+}
